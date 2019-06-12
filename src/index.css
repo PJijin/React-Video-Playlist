@@ -88,6 +88,7 @@ li:hover .delete {
 
 .d-flex {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .flex-grow-1 {
@@ -217,7 +218,7 @@ li:hover .delete {
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	width: 100vh;
+	margin: 80px;
 	margin: 0 auto;
 }
 
@@ -228,4 +229,19 @@ li:hover .delete {
 	right: 0;
 	text-align: right;
 	padding: 20px 20px 0px 0px;
+}
+
+@media screen and (max-width: 600px) {
+	.sidebar {
+		width: 100%;
+	}
+	.toolbar {
+		position: unset;
+	}
+	.video-player {
+		display: block;
+		width: 411px;
+		margin: 0px;
+		margin-bottom: 30px;
+	}
 }
