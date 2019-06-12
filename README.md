@@ -1,4 +1,4 @@
-# React Video Playlist
+# 🎞️ React Video Playlist
 
 React video playlist using Hooks.
 
