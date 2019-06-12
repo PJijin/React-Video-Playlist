@@ -1,6 +1,6 @@
 # 🎞️ React Video Playlist
 
-React video playlist using Hooks.
+Video playlist using React Hooks.
 
 
 [![React Play List](https://github.com/PJijin/React-Video-Playlist/blob/master/preview.gif?raw=true 'React Play List')]()
@@ -15,9 +15,11 @@ Live Preview: <a href="https://react-video-playlist.pjijin1.now.sh/" target="_BL
 
 ## Features
 
--   Save video playlist (localstorage)
+-   Save video playlist (localstorage).
 
--   Dark/Light model
+-   Dark / Light mode.
+
+-   Easy to manage video playlist.
 
 ## Bugs, Update, License
 
