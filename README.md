@@ -3,10 +3,8 @@
 React video playlist using Hooks.
 
 
-[![React Play List](https://github.com/PJijin/React-Video-Playlist/blob/master/preview-dark.png?raw=true 'React Play List')]()
-
-[![React Play List](https://github.com/PJijin/React-Video-Playlist/blob/master/preview-light.png?raw=true 'React Play List')]()
-
+[![React Play List](https://github.com/PJijin/React-Video-Playlist/blob/master/preview.gif?raw=true 'React Play List')]()
+ 
 
 Live Preview: <a href="https://react-video-playlist.pjijin1.now.sh/" target="_BLANK">Click Here</a>
 
