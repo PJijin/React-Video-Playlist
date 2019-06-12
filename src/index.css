@@ -121,6 +121,7 @@ li:hover .delete {
 	align-items: center;
 	padding: 9px;
 	cursor: pointer;
+	font-size: 14px;
 }
 
 .round-button-inverse .MuiSvgIcon-root-1 {
@@ -195,6 +196,13 @@ li:hover .delete {
 	margin-right: 15px;
 }
 
+.nav-video .MuiSvgIcon-root {
+	position: relative;
+	top: 5px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
 .active {
 	background: var(--active-color);
 }
@@ -229,6 +237,11 @@ li:hover .delete {
 	right: 0;
 	text-align: right;
 	padding: 20px 20px 0px 0px;
+}
+
+.toolbar .round-button-inverse .MuiSvgIcon-root {
+	position: relative;
+	top: 5px;
 }
 
 @media screen and (max-width: 600px) {
