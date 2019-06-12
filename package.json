@@ -1,0 +1,37 @@
+{
+  "name": "react-video-player",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/icons": "^4.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-modal-hook": "^1.1.1",
+    "react-scripts": "3.0.1",
+    "react-tooltip": "^3.10.0",
+    "reactstrap": "^8.0.0",
+    "use-dark-mode": "^2.3.1",
+    "video-react": "^0.13.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
