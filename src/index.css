@@ -115,6 +115,11 @@ li:hover .delete {
 	top: 7px;
 }
 
+.playlist-count {
+	float: right;
+	padding-right: 20px;
+}
+
 .round-button-inverse {
 	border-radius: 100px;
 	text-align: center;

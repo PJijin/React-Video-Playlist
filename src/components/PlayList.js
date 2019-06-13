@@ -1,6 +1,7 @@
 import React from 'react';
 import DeleteIcon from '@material-ui/icons/DeleteOutline';
 import VideIcon from '@material-ui/icons/PlayCircleOutline';
+import ReactTooltip from 'react-tooltip';
 
 const deleteItem = (id, videos, setVideos) => {
 	const newList = videos.filter((item, index) => index !== id);
@@ -11,7 +12,7 @@ const deleteItem = (id, videos, setVideos) => {
 export default function PlayList({ videos, currentVideo, setCurrentVideo, setVideos }) {
 	return (
 		<>
-			<h4>Playlists</h4>
+			<h4>Playlists {videos.length !== 0 ? <div className="playlist-count">{videos.length}</div> : ''}</h4>
 			<ul>
 				{videos.length === 0 ? <span className="text-muted">No video's in the Playlist</span> : ''}
 				{videos.map((video, index) => (
@@ -22,7 +23,8 @@ export default function PlayList({ videos, currentVideo, setCurrentVideo, setVid
 								<span>Video {index + 1}</span>
 							</div>
 						</div>
-						<span className="delete">
+						<span className="delete" data-tip="Remove Video">
+							<ReactTooltip effect="solid" place="right" />
 							<DeleteIcon
 								onClick={e => {
 									deleteItem(index, videos, setVideos);
