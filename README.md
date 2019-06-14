@@ -21,10 +21,16 @@ Live Preview: <a href="https://react-video-playlist.pjijin1.now.sh/" target="_BL
 
 -   Easy to manage video playlist.
 
-## Bugs, Update, License
+# Usage
 
--   Feel free to report bugs to jijin@devzstudio.com 🐞
+1. Clone the Repo
+2. Run `npm install`
+3. Run `npm start`
 
--   Feel free to customize ✒️
+# 🤝 Contributing
 
--   Open source 🎉
+Contributions, issues and feature requests are welcome!
+
+# Show your support
+
+Give a ⭐️ if this project helped you!
