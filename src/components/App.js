@@ -11,14 +11,33 @@ import PlayList from './PlayList';
 const handlePlaylist = (value, setVideos) => {
 	const urls = value.replace(/(\r\n|\n|\r)/gm, '').split(',');
 	let error = 0;
-	urls.map(url => {
-		if (!validURL(url.trim())) {
-			error = 1;
-		}
-	});
-	if (error === 0) {
-		localStorage.setItem('videos', urls);
-		setVideos(urls);
+
+	const matches = value.match(/\[(.*?)\]/);
+
+	const storeVideos = urlList => {
+		localStorage.setItem('videos', urlList);
+		setVideos(urlList);
+	};
+
+	if (!matches) {
+		urls.map(url => {
+			if (!validURL(url.trim())) {
+				error = 1;
+			}
+			return true;
+		});
+	}
+
+	if (matches) {
+		const submatch = matches[1];
+		const urlArray = [];
+		Array.from({ length: submatch }, (_, x) => {
+			return urlArray.push(value.replace(`[${submatch}]`, x + 1));
+		});
+		storeVideos(urlArray);
+		return true;
+	} else if (error === 0) {
+		storeVideos(urls);
 		return true;
 	} else return false;
 };
