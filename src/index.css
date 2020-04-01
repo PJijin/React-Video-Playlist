@@ -58,7 +58,7 @@ textarea {
 	border-radius: 8px;
 	line-height: 20px;
 	margin-left: 37px;
-	height: 47px;
+	min-height: 160px;
 	background: var(--background-light-color);
 	color: var(--text-color);
 	border: 0px;

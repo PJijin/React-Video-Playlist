@@ -118,7 +118,7 @@ function App() {
 							<textarea
 								name="playlisturls"
 								required
-								placeholder="Add video's to playlist (separated by comma)"
+								placeholder="Add video's to playlist (separated by comma). You can add custom name to videos (separated by space) Eg: NAME VideoURL."
 							/>
 							<button className="right button-primary">Save Playlist</button>
 						</form>
