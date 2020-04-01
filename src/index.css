@@ -22,13 +22,19 @@ body[class='dark-mode'] {
 	--background-color: #333;
 	--background-light-color: #3e3d3d;
 	--muted-color: #787373;
+	--video-active-color: #fff;
 }
 
 body[class='light-mode'] {
+	--video-active-color: #fff;
 	--text-color: #333;
 	--background-color: #f1f1f1;
 	--background-light-color: #fcfcfc;
 	--muted-color: #999595;
+}
+
+.flex {
+	display: flex;
 }
 
 a {
@@ -47,7 +53,7 @@ body {
 }
 
 textarea {
-	width: 88%;
+	width: 79%;
 	font-size: 12px;
 	border-radius: 8px;
 	line-height: 20px;
@@ -192,9 +198,10 @@ li:hover .delete {
 
 .sidebar {
 	background: var(--background-color);
-	width: 30%;
+	flex: 2;
 	height: 100vh;
 	overflow-y: scroll;
+	overflow-x: hidden;
 	color: var(--text-color);
 }
 
@@ -229,7 +236,7 @@ li:hover .delete {
 }
 
 .active .nav-video {
-	color: var(--text-color);
+	color: var(--video-active-color);
 }
 
 .sidebar li .nav-video {
@@ -251,18 +258,41 @@ li:hover .delete {
 	margin: 0 auto;
 }
 
+.video-player-section {
+	flex-grow: 1;
+	flex: 4;
+	display: flex;
+	flex-direction: column;
+}
+
+.video-player-section .grow {
+	flex-grow: 1;
+}
+
 .toolbar {
-	height: 10%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	text-align: right;
-	padding: 20px 20px 0px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 1rem;
+	max-width: 100%;
+}
+
+.toolbar a {
+	cursor: pointer;
 }
 
 .toolbar .round-button-inverse .MuiSvgIcon-root {
 	position: relative;
 	top: 5px;
+}
+
+.label-name {
+	margin: 1rem 0;
+}
+
+.label-name span {
+	color: #737373;
 }
 
 @media screen and (max-width: 600px) {

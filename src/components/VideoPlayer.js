@@ -6,18 +6,21 @@ export default function VideoPlayer({ currentVideo }) {
 	return (
 		<div className="video-player">
 			{currentVideo ? (
-				<PlyrComponent
-					sources={{
-						type: 'video',
-						sources: [
-							{
-								src: currentVideo,
-								type: 'video/mp4',
-								size: 720
-							}
-						]
-					}}
-				/>
+				<div>
+					<PlyrComponent
+						sources={{
+							type: 'video',
+							sources: [
+								{
+									src: currentVideo.url,
+									type: 'video/mp4',
+									size: 720
+								}
+							]
+						}}
+					/>
+					<div className="flex center label-name">{currentVideo.name}</div>
+				</div>
 			) : (
 				<div className="text-muted">
 					<p>
