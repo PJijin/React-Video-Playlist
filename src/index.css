@@ -131,6 +131,7 @@ li:hover .delete {
 
 .text-muted {
 	color: var(--muted-color);
+	padding: 1rem;
 }
 .c-icon {
 	position: relative;
@@ -198,7 +199,7 @@ li:hover .delete {
 
 .sidebar {
 	background: var(--background-color);
-	flex: 2;
+	flex: 1;
 	height: 100vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -298,13 +299,13 @@ li:hover .delete {
 @media screen and (max-width: 600px) {
 	.sidebar {
 		width: 100%;
+		flex: 2 1 500px;
 	}
 	.toolbar {
 		position: unset;
 	}
 	.video-player {
 		display: block;
-		width: 411px;
 		margin: 0px;
 		margin-bottom: 30px;
 	}
