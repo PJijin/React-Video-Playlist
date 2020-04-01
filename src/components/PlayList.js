@@ -10,6 +10,7 @@ const deleteItem = (id, videos, setVideos) => {
 };
 
 export default function PlayList({ videos, currentVideo, setCurrentVideo, setVideos }) {
+	console.log(videos);
 	return (
 		<>
 			<h4>Playlists {videos.length !== 0 ? <div className="playlist-count">{videos.length}</div> : ''}</h4>

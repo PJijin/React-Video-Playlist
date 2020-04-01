@@ -1,13 +1,23 @@
 import React from 'react';
-import { Player } from 'video-react';
 import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
-import 'video-react/dist/video-react.css';
+import { PlyrComponent } from 'plyr-react';
 
 export default function VideoPlayer({ currentVideo }) {
 	return (
 		<div className="video-player">
 			{currentVideo ? (
-				<Player src={currentVideo} />
+				<PlyrComponent
+					sources={{
+						type: 'video',
+						sources: [
+							{
+								src: currentVideo,
+								type: 'video/mp4',
+								size: 720
+							}
+						]
+					}}
+				/>
 			) : (
 				<div className="text-muted">
 					<p>

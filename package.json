@@ -5,13 +5,13 @@
 	"dependencies": {
 		"@material-ui/core": "^4.1.0",
 		"@material-ui/icons": "^4.1.0",
+		"plyr-react": "^2.2.0",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
-		"react-scripts": "3.0.1",
+		"react-scripts": "^3.4.1",
 		"react-tooltip": "^3.10.0",
 		"reactstrap": "^8.0.0",
-		"use-dark-mode": "^2.3.1",
-		"video-react": "^0.13.7"
+		"use-dark-mode": "^2.3.1"
 	},
 	"scripts": {
 		"start": "react-scripts start",

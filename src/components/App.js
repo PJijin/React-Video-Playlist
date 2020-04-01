@@ -43,7 +43,6 @@ const handlePlaylist = (value, setVideos) => {
 };
 
 const videosInitialData = () => {
-	// Load localstorage items to initial state
 	const videosData = localStorage.videos;
 	if (videosData) return videosData.split(',');
 	return [];
